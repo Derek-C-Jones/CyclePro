@@ -48,10 +48,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CycleProData\Models.csproj">
-      <Project>{e52bc94c-488f-4b60-814b-18d93fed321e}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{d69d28d2-238a-4d30-81ad-bc027662f73d}</Project>
       <Name>Core</Name>
