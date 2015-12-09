@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace CyclePro.Models
 {
-    public class Route
+    public partial class Route
     {
         public enum DocumentNsType
         {

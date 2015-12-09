@@ -8,9 +8,11 @@ namespace CyclePro.Models
 {
     public class Point
     {
-        public double Longitude { get; set; }
-        public double Latitude { get; set; }
-        public double Elevation { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+        public double? Elevation { get; set; }
+        //public int HeartRate { get; set }
+        public int HeartRate { get; set; }
         public DateTime Time { get; set; }
     }
 }

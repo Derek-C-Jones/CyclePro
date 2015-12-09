@@ -13,10 +13,11 @@ namespace CyclePro.Test
     {
         static void Main(string[] args)
         {
-            GPXHandler gpxHandler = new GPXHandler();
-            XDocument doc = gpxHandler.LoadDocument("2015062711500.gpx", CyclePro.Core.XMLHandlerBase.LoadType.Disk);
+            GPXParser gpxHandler = new GPXParser();
+            XDocument doc = gpxHandler.LoadDocument("ShortAfternoonRide.gpx", XMLParserBase.LoadType.Disk);
             Console.WriteLine(doc.ToString());
-            Route testRout = gpxHandler.CreateRoute(doc);
+            Route testRoute = gpxHandler.CreateRoute(doc);
+            testRoute.RemovePoint("-25.8286530", "28.2942930");
             Console.ReadKey();
         }
     }

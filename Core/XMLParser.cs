@@ -7,7 +7,7 @@ using CyclePro.Models;
 
 namespace CyclePro.Core
 {
-    public abstract class XMLHandlerBase
+    public abstract class XMLParserBase
     {
         public enum LoadType 
         {
@@ -20,7 +20,7 @@ namespace CyclePro.Core
 
         public abstract List<Point> LoadPoints(XDocument doc);
 
-        protected XDocument loadFromDisk(string location) 
+        protected XDocument loadFromDisk(string location)
         {
             XDocument kmlDoc = new XDocument();
             kmlDoc = XDocument.Load(location);

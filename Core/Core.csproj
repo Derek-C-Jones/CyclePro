@@ -40,8 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\InvalidInputFileException.cs" />
-    <Compile Include="GPXHandler.cs" />
-    <Compile Include="XMLHandler.cs" />
+    <Compile Include="GPXParser.cs" />
+    <Compile Include="XMLParser.cs" />
+    <Compile Include="Interfaces\IXMLParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
